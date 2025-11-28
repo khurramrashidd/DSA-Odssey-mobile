@@ -11,16 +11,14 @@ load_dotenv()
 app = Flask(__name__)
 
 # --- Gemini AI Setup ---
-# The API key is now loaded from the .env file
-API_KEY = os.environ.get("GEMINI_API_KEY")
-GEMINI_API_KEY = "AIzaSyBZ_Mea6_FaJVcWTYhc4r1OAlGzjdQIkxw"
-# A simple check to ensure the API key is loaded.
-if not API_KEY:
-    raise ValueError("GEMINI_API_KEY not found. Please set it in your .env file.")
+# --- Gemini AI Setup (Secure: Load from Render Environment Variable) ---
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
-# Configure the Gemini API client
-genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash')
+if not GEMINI_API_KEY:
+    raise ValueError("❌ Missing GEMINI_API_KEY environment variable in Render settings.")
+
+genai.configure(api_key=GEMINI_API_KEY)
+model = genai.GenerativeModel("gemini-2.5-flash")
 
 def parse_ai_response(text):
     """
