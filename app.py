@@ -8,14 +8,24 @@ app = Flask(__name__)
 
 # --- Gemini AI Setup ---
 # --- Gemini AI Setup (Secure: Load from Render Environment Variable) ---
+# GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+
+# if not GEMINI_API_KEY:
+#     raise ValueError("❌ Missing GEMINI_API_KEY environment variable in Render settings.")
+
+# genai.configure(api_key=GEMINI_API_KEY)
+# model = genai.GenerativeModel("gemini-2.5-flash")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
 if not GEMINI_API_KEY:
-    raise ValueError("❌ Missing GEMINI_API_KEY environment variable in Render settings.")
+    raise ValueError("❌ Missing GEMINI_API_KEY environment variable.")
 
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("gemini-2.5-flash")
 
+model = genai.GenerativeModel(
+    "gemini-2.5-flash",
+    client_options={"api_endpoint": "https://generativelanguage.googleapis.com"}
+)
 
 
 def parse_ai_response(text):
