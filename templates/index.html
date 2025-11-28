@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>160 Day DSA Odyssey ✨</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <button id="sidebar-toggle-btn" class="sidebar-toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div id="sidebar" class="sidebar collapsed">
+        <div id="sidebar-main-content" class="sidebar-content">
+            <header class="header-title">
+                <h1>160-Day DSA Odyssey</h1>
+                <p>By Khurram Rashid</p>
+                <p class="instruction-text">Click a planet to explore</p>
+            </header>
+
+            <div class="controls-container">
+                <input type="text" id="search-box" placeholder="Search by name...">
+                <select id="topic-filter">
+                    <option value="">Filter by Topic</option>
+                </select>
+                <button id="toggle-path-btn">Show Journey Path</button>
+            </div>
+
+            <div id="stats-panel" class="stats-panel">
+            </div>
+        </div>
+
+        <div id="sidebar-details-view" class="sidebar-content details-view">
+            <button id="back-to-main-btn" class="back-button">‹ Back</button>
+            <div id="info-box" class="info-box">
+            </div>
+            <button id="open-ai-modal-btn" class="ai-button">🤖 Get AI Code Solution</button>
+        </div>
+    </div>
+
+    <div id="ai-modal-overlay" class="ai-modal-overlay">
+        <div class="ai-modal-content-wrapper">
+            <button id="ai-modal-close-btn" class="ai-modal-close-btn">&times;</button>
+            <div class="ai-modal-header">
+                <h3>AI-Powered Code Solution</h3>
+                <p id="ai-modal-problem-name"></p>
+                <div class="controls-container">
+                    <input type="text" id="language-input" placeholder="Enter programming language (e.g., Python, C++)">
+                    <button id="get-code-btn">Generate Solution</button>
+                </div>
+            </div>
+            <div id="solution-container" class="solution-container">
+                </div>
+        </div>
+    </div>
+
+    <div id="loading-screen" class="loading-screen">
+        <div class="spinner"></div>
+        <p>Charting the stars of my journey...</p>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.157.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.157.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

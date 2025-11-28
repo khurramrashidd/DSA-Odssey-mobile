@@ -1,0 +1,2402 @@
+[
+  {
+    "day": 1,
+    "problems": [
+      {
+        "name": "Second Largest",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Arrays", "Sorting"],
+        "emojis": ["🥈", "📊"],
+        "notes": "A great warm-up! This taught me to think about edge cases. The approach was a single pass through the array, keeping track of the two largest numbers seen so far. Fun fact: This is like finding the winner and runner-up in a race without needing to sort all the participants!"
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 2,
+    "problems": [
+      {
+        "name": "Move All Zeroes to End",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Arrays", "Two Pointers"],
+        "emojis": ["⏩", "🎯"],
+        "notes": "This problem was a perfect introduction to the two-pointer technique. I used one pointer to track the position of the last non-zero element. It's like a bouncer at a club letting all the non-zero 'VIPs' in first, and making the zeroes wait at the end."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 3,
+    "problems": [
+      {
+        "name": "Reverse an Array",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Arrays"],
+        "emojis": ["🔄", "配列"],
+        "notes": "The classic in-place reversal! I used a two-pointer approach, one at the start and one at the end, swapping elements until they met in the middle. Fun fact: Reversing an array is a key step in checking for palindromes."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 4,
+    "problems": [
+      {
+        "name": "Rotate Array",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Arrays", "Rotation"],
+        "emojis": ["🎡", "🔄"],
+        "notes": "This one had a clever trick! Instead of manually shifting elements, the most elegant approach is to reverse the whole array, then reverse the first 'k' elements, and finally reverse the rest. Three reversals to achieve a rotation!"
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 5,
+    "problems": [
+      {
+        "name": "Next Permutation",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Permutations"],
+        "emojis": ["🔢", "✨"],
+        "notes": "A truly mind-bending problem. The key insight is to find the first 'dip' from the right, swap it with the smallest number larger than it to its right, and then reverse the rest. It's like finding the smallest possible 'promotion' for a number to create the next largest sequence."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 6,
+    "problems": [
+      {
+        "name": "Majority Element II",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Hashing"],
+        "emojis": ["🗳️", "🔑"],
+        "notes": "This problem pushed me beyond a simple hash map. The solution is the Boyer-Moore Voting Algorithm, which cleverly finds up to two candidates by pairing and canceling out different elements. Fun fact: This algorithm guarantees finding any element that appears more than n/3 times."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 7,
+    "problems": [
+      {
+        "name": "Stock Buy and Sell – Multiple Transactions Allowed",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Arrays", "Greedy"],
+        "emojis": ["📈", "💰"],
+        "notes": "The learning here was that you don't need to predict the future! The greedy approach of simply accumulating profit every time the price goes up works perfectly. It’s like taking every small win, which adds up to the maximum possible profit."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 8,
+    "problems": [
+      {
+        "name": "Stock Buy and Sell – Max One Transaction Allowed",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Arrays"],
+        "emojis": ["📈", "💵"],
+        "notes": "This one is about finding the best opportunity. I solved it by iterating through the array while keeping track of the minimum price found so far, and calculating the maximum potential profit at each step. It's a simple yet powerful O(n) approach."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 9,
+    "problems": [
+      {
+        "name": "Minimize the Heights I",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Sorting"],
+        "emojis": ["📊", "⚖️"],
+        "notes": "Sorting was the key first step. After sorting, the problem simplifies to finding the minimum difference between the new potential min and max values. It taught me how sorting can often reveal a simpler structure in a problem."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 10,
+    "problems": [
+      {
+        "name": "Kadane’s Algorithm",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Dynamic Programming"],
+        "emojis": ["⛓️", "🚀"],
+        "notes": "Kadane's is a masterpiece of efficiency. The insight is that at each point, the maximum subarray can either continue the previous one or start fresh. Fun fact: This algorithm is used in image processing to find the brightest contiguous part of an image!"
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 11,
+    "problems": [
+      {
+        "name": "Maximum Product Subarray",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Dynamic Programming"],
+        "emojis": ["✖️", "🚀"],
+        "notes": "This is a clever twist on Kadane's. The challenge is that a negative number can become positive when multiplied by another negative. So, I had to track both the maximum *and* minimum product so far. This problem taught me to always consider how negative numbers can flip the logic."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 12,
+    "problems": [
+      {
+        "name": "Max Circular Subarray Sum",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Kadane's Algorithm"],
+        "emojis": ["🔄", "➕"],
+        "notes": "A brilliant application of Kadane's algorithm. The max sum is either the normal max subarray sum (using Kadane's) OR the total sum minus the minimum subarray sum (the most 'negative' part). Finding the minimum sum is just finding the max sum of the inverted array!"
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 13,
+    "problems": [
+      {
+        "name": "Smallest Positive Missing Number",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Hashing"],
+        "emojis": ["🔍", "🔢"],
+        "notes": "This problem is a great lesson in using the array itself as a hash map. By manipulating the signs of the numbers at certain indices, I could mark which positive numbers were present without using any extra space. A truly clever O(n) time, O(1) space solution."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 14,
+    "problems": [
+      {
+        "name": "Implement Atoi",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Strings"],
+        "emojis": ["📜", "🔢"],
+        "notes": "String to integer conversion seems simple, but handling edge cases like whitespace, signs (+/-), and overflow is the real challenge. This problem was a great exercise in careful, robust parsing. It's like being a very strict librarian, only accepting books that follow the rules exactly."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 15,
+    "problems": [
+      {
+        "name": "Add Binary Strings",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Strings", "Binary"],
+        "emojis": ["➕", "🤖"],
+        "notes": "This felt like building a digital circuit! I iterated from the end of both strings, simulating binary addition with a 'carry' variable. It's a fundamental concept in computer architecture, and it's cool to implement it in code."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 16,
+    "problems": [
+      {
+        "name": "Anagram",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Strings", "Hashing"],
+        "emojis": ["🔄", "📜"],
+        "notes": "This problem taught me there are multiple ways to see if words have the same 'ingredients'. Sorting both strings and comparing them is one way, but using a character frequency map (a hash map) is often more efficient. Fun fact: The word 'anagram' can be rearranged to 'ars magna', which is Latin for 'great art'."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 17,
+    "problems": [
+      {
+        "name": "Non-Repeating Character",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Strings", "Hashing"],
+        "emojis": ["🔍", "📜"],
+        "notes": "A two-pass approach was the key here. First pass to build a frequency map of all characters. Second pass to iterate through the string again and return the first character with a count of 1. It shows how sometimes, a little pre-computation makes the final answer easy to find."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 18,
+    "problems": [
+      {
+        "name": "Search Pattern (KMP Algorithm)",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Strings", "Algorithms"],
+        "emojis": ["🔍", "⚡"],
+        "notes": "Diving into the KMP (Knuth-Morris-Pratt) algorithm was a big step up. The magic is in the preprocessing step: creating an LPS (Longest Proper Prefix which is also Suffix) array. This array tells the algorithm how many characters to skip on a mismatch, avoiding redundant comparisons. It's incredibly smart!"
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 19,
+    "problems": [
+      {
+        "name": "Min Chars to Add for Palindrome",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Strings", "KMP"],
+        "emojis": ["⚖️", " palindrome"],
+        "notes": "This problem blew my mind. The solution involves concatenating the original string with a separator and its reverse, then using KMP's LPS array on this new string. The length of the longest palindromic prefix is found in the last element of the LPS array! A very non-obvious application of KMP."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 20,
+    "problems": [
+      {
+        "name": "Strings Rotations of Each Other",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Strings"],
+        "emojis": ["🔄", "📜"],
+        "notes": "A beautifully simple solution to a seemingly complex problem. If string B is a rotation of string A, then B must be a substring of A+A. For example, if A='waterbottle', A+A='waterbottlewaterbottle', and the rotation 'erbottlewat' is clearly inside. So elegant!"
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 21,
+    "problems": [
+      {
+        "name": "Sort 0s, 1s, and 2s",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Arrays", "Sorting"],
+        "emojis": ["🎨", "🔢"],
+        "notes": "This is the famous Dutch National Flag problem! I solved it using three pointers: low, mid, and high. The algorithm partitions the array into three sections in a single pass. It’s a fantastic example of an in-place, O(n) sorting algorithm for a limited set of values."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 22,
+    "problems": [
+      {
+        "name": "Find H-Index",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Sorting", "Binary Search"],
+        "emojis": ["🔬", "📚"],
+        "notes": "The H-Index is a metric for academic citations. This problem taught me how to translate a real-world definition into an algorithm. After sorting the citations, I used binary search to efficiently find the point 'h' where there are 'h' papers with at least 'h' citations. Fun fact: The h-index was suggested in 2005 by physicist Jorge E. Hirsch."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 23,
+    "problems": [
+      {
+        "name": "Count Inversions",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Divide and Conquer"],
+        "emojis": ["🔄", "🔢"],
+        "notes": "A classic problem solved beautifully with a modified Merge Sort. The key insight is that inversions (where a[i] > a[j] but i < j) can be counted during the 'merge' step. When an element from the right subarray is chosen, it's smaller than all remaining elements in the left subarray, giving us a count of new inversions."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 24,
+    "problems": [
+      {
+        "name": "Overlapping Intervals",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Intervals"],
+        "emojis": ["🔄", "📏"],
+        "notes": "This is the bedrock of many interval problems. The strategy is to sort the intervals by their start time. Then, I iterated through them, merging any interval that overlaps with the previous merged interval. It’s like connecting a chain of dominoes."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 25,
+    "problems": [
+      {
+        "name": "Insert Interval",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Intervals"],
+        "emojis": ["➕", "📏"],
+        "notes": "This problem taught me to handle different cases cleanly. My approach was to iterate through the intervals, adding all intervals that end before the new one starts, then merging the new interval with any that overlap, and finally adding all the remaining intervals. A very logical, case-by-case solution."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 26,
+    "problems": [
+      {
+        "name": "Non-overlapping Intervals",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Greedy", "Intervals"],
+        "emojis": ["🚫", "📏"],
+        "notes": "A classic greedy problem. The key is to sort the intervals by their *end* times. Then, I greedily selected the first interval and discarded any that overlapped with it, moving to the next available one. This always yields the maximum number of non-overlapping intervals. It's like picking the movie that finishes earliest so you can watch more movies!"
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 27,
+    "problems": [
+      {
+        "name": "Merge Without Extra Space",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Sorting"],
+        "emojis": ["🔄", "💾"],
+        "notes": "This was a tough one that required thinking outside the box. The Gap method (based on Shell Sort) was the breakthrough. I started with a large 'gap' and compared elements that were 'gap' indices apart, swapping if needed, and then gradually reduced the gap. It's an in-place merge that feels like magic."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 28,
+    "problems": [
+      {
+        "name": "Number of Occurrence",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Arrays", "Binary Search"],
+        "emojis": ["🔢", "🔍"],
+        "notes": "This problem reinforced my understanding of binary search. Instead of just finding the element, I had to find its first and last occurrences. I did this by running two modified binary searches: one to find the leftmost index and one to find the rightmost. The answer is just (last - first + 1)."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 29,
+    "problems": [
+      {
+        "name": "Sorted and Rotated Minimum",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Arrays", "Binary Search"],
+        "emojis": ["🔄", "🔍"],
+        "notes": "Binary search on a rotated array! The key is to identify which half of the array is still sorted. The minimum element is the 'pivot' point, the only element that is smaller than its predecessor. By comparing the middle element with the ends, I could discard half the array in each step."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 30,
+    "problems": [
+      {
+        "name": "Search in Rotated Sorted Array",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Binary Search"],
+        "emojis": ["🔄", "🔍"],
+        "notes": "This builds on finding the minimum. The logic is similar: use binary search, and at each step, determine which partition (left or right of mid) is sorted. Then, check if the target lies within that sorted partition to decide where to search next. It's a puzzle of narrowing down possibilities."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 31,
+    "problems": [
+      {
+        "name": "Peak Element",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Binary Search"],
+        "emojis": ["🏔️", "🔍"],
+        "notes": "Another great binary search problem. The insight here is that if the middle element is on a 'slope' (i.e., smaller than its neighbor), the peak must lie in the direction of the upward slope. This allows you to discard half the search space every time. It's like climbing a mountain by always choosing the upward path."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 32,
+    "problems": [
+      {
+        "name": "K-th Element of Two Arrays",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Arrays", "Binary Search", "Divide and Conquer"],
+        "emojis": [" Kth", "🔍"],
+        "notes": "This was one of the hardest binary search problems. The solution involves applying binary search on the possible partitions of the two arrays. The goal is to find a 'cut' in both arrays such that all elements on the left are smaller than all elements on the right, and the total count on the left is 'k'. A true test of divide and conquer logic."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 33,
+    "problems": [
+      {
+        "name": "Aggressive Cows",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Binary Search"],
+        "emojis": ["🐮", "🏠"],
+        "notes": "This problem taught me the concept of 'binary search on the answer'. Instead of searching for an index, I binary searched for the maximum possible minimum distance. For each potential distance 'd', I checked greedily if it was possible to place all the cows. This is a powerful pattern for many optimization problems."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 34,
+    "problems": [
+      {
+        "name": "Allocate Minimum Pages",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Binary Search"],
+        "emojis": ["📚", "🧑‍🎓"],
+        "notes": "Similar to 'Aggressive Cows', this is another 'binary search on the answer' problem. I binary searched for the minimum possible value for the maximum number of pages any student could get. The check function then greedily assigns pages to students to see if it's possible within that limit. A very useful problem-solving paradigm."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 35,
+    "problems": [
+      {
+        "name": "K-th Missing Positive Number in a Sorted Array",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Arrays", "Binary Search"],
+        "emojis": ["🔍", "🔢"],
+        "notes": "A clever binary search application. The number of missing integers up to an index `i` is `arr[i] - (i + 1)`. I used binary search to find the turning point where the number of missing integers becomes greater than or equal to `k`. This quickly narrows down where the k-th missing number must be."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 36,
+    "problems": [
+      {
+        "name": "Spirally Traversing a Matrix",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Matrix", "Arrays"],
+        "emojis": ["🌀", " M"],
+        "notes": "This was a fun simulation problem. The key was to maintain four boundary pointers: top, bottom, left, and right. I traversed the matrix layer by layer, shrinking the boundaries after completing each side of the rectangle. It’s like peeling an onion from the outside in."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 37,
+    "problems": [
+      {
+        "name": "Rotate by 90 Degree",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Matrix", "Arrays"],
+        "emojis": ["🔄", " M"],
+        "notes": "Another problem with a beautiful, non-obvious solution. To rotate a matrix 90 degrees clockwise in-place, you first find its transpose, and then you reverse each row. Two simple steps to achieve a complex rotation! This was a great lesson in breaking down a problem into simpler transformations."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 38,
+    "problems": [
+      {
+        "name": "Search in a Row–Column Sorted Matrix",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Matrix", "Binary Search"],
+        "emojis": ["🔍", " M"],
+        "notes": "This problem taught me a new search pattern. Instead of a standard binary search, the optimal approach starts at the top-right (or bottom-left) corner. From there, you can eliminate an entire row or column with each comparison. It's a linear time O(m+n) search that feels like navigating a staircase."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 39,
+    "problems": [
+      {
+        "name": "Search in a Row-Wise Sorted Matrix",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Matrix", "Binary Search"],
+        "emojis": ["🔍", " M"],
+        "notes": "This is a more direct application of binary search. Since each row is sorted, I can apply binary search on each row. A more optimized approach treats the whole matrix as a single sorted array of size m*n and uses binary search on the indices, converting a 1D index back to 2D coordinates."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 40,
+    "problems": [
+      {
+        "name": "Search in a Sorted Matrix",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Matrix", "Binary Search"],
+        "emojis": ["🔍", " M"],
+        "notes": "Combining row and column sorting properties is key. The most efficient method is to start at the top-right corner. If the target is smaller, move left. If it's larger, move down. Each step eliminates a row or a column. This linear scan is much faster than a naive search."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 41,
+    "problems": [
+      {
+        "name": "Set Matrix Zeroes",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Matrix", "Arrays"],
+        "emojis": ["🅾️", " M"],
+        "notes": "The challenge here is to do it in O(1) space. The solution is to use the first row and first column of the matrix itself as markers. A first pass marks which rows/cols need to be zeroed. A second pass uses these markers to set the zeroes. It's a brilliant space-saving technique."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 42,
+    "problems": [
+      {
+        "name": "Two Sum – Pair with Given Sum",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Hashing", "Arrays"],
+        "emojis": ["➕", "🎯"],
+        "notes": "The quintessential hashing problem! Using a hash map (or set) to store numbers as I iterate allows for an O(1) lookup to see if the complement (target - current_number) exists. This turns a brute-force O(n^2) problem into a sleek O(n) solution."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 43,
+    "problems": [
+      {
+        "name": "Count Pairs with Given Sum",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Hashing", "Arrays"],
+        "emojis": ["🔢", "🎯"],
+        "notes": "Building on Two Sum, this problem requires counting pairs. A hash map storing the frequency of each number is the perfect tool. For each number `x`, I check the map for its complement `target - x` and add its frequency to my count. A great exercise in using maps for more than just existence checks."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 44,
+    "problems": [
+      {
+        "name": "Find All Triplets with Zero Sum",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Two Pointers"],
+        "emojis": ["➕", "🅾️"],
+        "notes": "This problem shows how different techniques combine. I first sorted the array. Then, I iterated through it, fixing one number `a`. For the rest of the array, I used the two-pointer technique to find pairs `b` and `c` that sum to `-a`. Sorting is the key that unlocks the efficient two-pointer part."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 45,
+    "problems": [
+      {
+        "name": "Intersection of Two Arrays with Duplicate Elements",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Arrays", "Hashing"],
+        "emojis": ["∩", "🔢"],
+        "notes": "Hashing makes this straightforward. I created a frequency map for the first array. Then, I iterated through the second array, and for each element, if it existed in the map with a count > 0, I added it to my result and decremented its count in the map. This handles duplicates perfectly."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 46,
+    "problems": [
+      {
+        "name": "Union of Arrays with Duplicates",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Arrays", "Hashing"],
+        "emojis": ["∪", "🔢"],
+        "notes": "A hash set is the ideal tool for finding a union, as it automatically handles duplicates. I simply iterated through both arrays and added every element to a set. The final result is just the elements of the set. Clean, simple, and efficient."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 47,
+    "problems": [
+      {
+        "name": "Longest Consecutive Subsequence",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Hashing"],
+        "emojis": ["📈", "⛓️"],
+        "notes": "A clever use of a hash set for O(n) performance. After adding all numbers to a set, I iterated through them. If a number `n` had no `n-1` in the set, it was the start of a new sequence. From there, I just kept checking for `n+1`, `n+2`, etc., to find the length of that sequence. This avoids redundant checks."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 48,
+    "problems": [
+      {
+        "name": "Print Anagrams Together",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Strings", "Hashing"],
+        "emojis": ["🔄", "📜"],
+        "notes": "The insight here is that all anagrams become identical when their characters are sorted. I used a hash map where the key was the sorted version of a string, and the value was a list of all its anagrams. I just iterated through the input list, sorted each string to find its key, and appended it to the correct list in the map."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 49,
+    "problems": [
+      {
+        "name": "Subarrays with Sum K",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Hashing"],
+        "emojis": ["➕", "🎯"],
+        "notes": "A brilliant prefix sum and hashing problem. The sum of a subarray `[i, j]` is `prefixSum[j] - prefixSum[i-1]`. So, if we want this to equal `k`, we are looking for `prefixSum[i-1] == prefixSum[j] - k`. I used a hash map to store frequencies of prefix sums as I iterated, which allowed me to find the number of such subarrays in O(n) time."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 50,
+    "problems": [
+      {
+        "name": "Count Subarrays with Given XOR",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Hashing", "Bit Manipulation"],
+        "emojis": ["🔢", "💡"],
+        "notes": "This problem uses the same prefix sum logic as 'Subarray Sum K', but with XOR. The magic property is that `A ^ B = C` implies `A ^ C = B`. The XOR sum of a subarray `[i, j]` is `prefixXOR[j] ^ prefixXOR[i-1]`. So we look for `prefixXOR[i-1] == prefixXOR[j] ^ k`. A hash map of prefix XORs makes this an O(n) solution."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 51,
+    "problems": [
+      {
+        "name": "Count All Triplets with Given Sum in Sorted Array",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Two Pointers"],
+        "emojis": ["🔢", "🎯"],
+        "notes": "This problem combines a loop with the two-pointer technique. I iterated through the array, fixing the first element `a[i]`. Then, I used two pointers (left and right) on the rest of the array to find pairs that sum to `target - a[i]`. Sorting the array first is crucial for the two-pointer approach to work."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 52,
+    "problems": [
+      {
+        "name": "Count Pairs Whose Sum Is Less Than Target",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Arrays", "Two Pointers"],
+        "emojis": ["🔢", "📉"],
+        "notes": "After sorting, I used two pointers, `left` at the start and `right` at the end. If `nums[left] + nums[right] < target`, it means `nums[left]` can be paired with *all* elements from its current position up to `right`. So, I add `right - left` to the count and increment `left`. Otherwise, I decrement `right`. A very clever counting method."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 53,
+    "problems": [
+      {
+        "name": "Sum Pair Closest to Target",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Two Pointers"],
+        "emojis": ["🎯", "🤏"],
+        "notes": "Another two-pointer classic on a sorted array. As I moved the `left` and `right` pointers, I calculated the current sum. I kept track of the minimum difference found so far and updated it whenever the current pair's sum was closer to the target. It's like zeroing in on a target from both sides."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 54,
+    "problems": [
+      {
+        "name": "Pair with Given Sum in a Sorted Array",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Arrays", "Two Pointers"],
+        "emojis": ["➕", "🎯"],
+        "notes": "The fact that the array is sorted is the biggest hint. The two-pointer approach is perfect. Start with pointers at both ends. If the sum is too small, move the left pointer right. If it's too big, move the right pointer left. This guarantees finding the pair in O(n) time."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 55,
+    "problems": [
+      {
+        "name": "Count the Number of Possible Triangles",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Sorting", "Two Pointers"],
+        "emojis": ["🔺", "🔢"],
+        "notes": "This problem relies on the triangle inequality theorem: a+b > c. After sorting, I fixed the largest side `c` by iterating from the end. Then, I used two pointers on the subarray before `c` to find all pairs `a` and `b` that satisfy the property. It’s a great example of applying a mathematical rule in an algorithm."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 56,
+    "problems": [
+      {
+        "name": "Indexes of Subarray Sum",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Arrays", "Sliding Window"],
+        "emojis": ["🔍", "🎯"],
+        "notes": "The sliding window technique shines here, especially with non-negative numbers. I maintained a 'window' with a running sum. If the sum was too small, I expanded the window by moving the right pointer. If it was too large, I shrank it by moving the left pointer. It's an intuitive way to check all contiguous subarrays efficiently."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 57,
+    "problems": [
+      {
+        "name": "Count Distinct Elements in Every Window",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Sliding Window", "Hashing"],
+        "emojis": ["🖼️", "🔢"],
+        "notes": "This problem combines the sliding window with a hash map. The map stored the frequency of elements within the current window. As the window slid one step to the right, I added the new element to the map and removed the old one. The number of distinct elements at each step is simply the size of the map."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 58,
+    "problems": [
+      {
+        "name": "Longest Substring with Distinct Characters",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Strings", "Sliding Window"],
+        "emojis": ["📈", "📜"],
+        "notes": "A quintessential sliding window problem. I used a hash map to store the last seen index of each character. As I expanded the window with a right pointer, if I encountered a character already in the window, I moved the left pointer (the start of the window) to the right of its last occurrence. This efficiently maintains a window with no repeating characters."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 59,
+    "problems": [
+      {
+        "name": "Trapping Rain Water",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Arrays", "Two Pointers"],
+        "emojis": ["💧", "🧱"],
+        "notes": "A very challenging but rewarding problem. The amount of water trapped at any index is `min(max_left, max_right) - height[i]`. A two-pointer approach from both ends is the most optimized solution. By tracking the max height seen from each side, I could calculate the trapped water in a single pass. It’s like filling a landscape with water from two sides up to the height of the shorter dam."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 60,
+    "problems": [
+      {
+        "name": "Container With Most Water",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Two Pointers"],
+        "emojis": ["💧", "📦"],
+        "notes": "This problem has a beautiful greedy insight. Using two pointers at the ends, the area is limited by the shorter of the two lines. To have any chance of finding a larger area, you must move the pointer of the shorter line inwards. This simple greedy choice guarantees finding the maximum area in O(n) time."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 61,
+    "problems": [
+      {
+        "name": "Equilibrium Point",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Arrays", "Prefix Sum"],
+        "emojis": ["⚖️", "🎯"],
+        "notes": "The prefix sum technique is perfect for this. I first calculated the total sum of the array. Then, I iterated from the left, maintaining a `left_sum`. The `right_sum` at any point can be calculated as `total_sum - left_sum - current_element`. When `left_sum` equals `right_sum`, I've found the equilibrium!"
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 62,
+    "problems": [
+      {
+        "name": "Longest Subarray with Sum K",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Hashing", "Prefix Sum"],
+        "emojis": ["📈", "🎯"],
+        "notes": "This problem can handle negative numbers, so the basic sliding window doesn't work. The solution is the prefix sum with a hash map. I stored the first index where each prefix sum occurred. When I calculated a new `prefix_sum`, I looked for `prefix_sum - k` in the map to find the start of a valid subarray."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 63,
+    "problems": [
+      {
+        "name": "Largest Subarray of 0's and 1's",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Hashing"],
+        "emojis": ["📈", "⚖️"],
+        "notes": "The trick here is to convert all 0s to -1. Now, the problem transforms into finding the longest subarray with a sum of 0. This is a variation of the prefix sum with hashing problem I solved earlier! It's amazing how one problem can be reframed into another."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 64,
+    "problems": [
+      {
+        "name": "Product Array Puzzle",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Arrays"],
+        "emojis": ["🧩", "✖️"],
+        "notes": "The challenge is to solve this without using the division operator. The solution is to make two passes. In the first pass, I created a `left_products` array. In the second pass, I iterated from the right, calculating the `right_product` on the fly and multiplying it with the corresponding `left_products` entry. This gives the final result in O(n) time and O(1) extra space (if the output array doesn't count)."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 65,
+    "problems": [
+      {
+        "name": "Reverse a Linked List",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Linked List"],
+        "emojis": ["🔄", "🔗"],
+        "notes": "The absolute classic linked list problem. It taught me the importance of pointer manipulation. The iterative approach uses three pointers: `prev`, `current`, and `next`. At each step, I reversed the `current` node's pointer to `prev`, then moved all three pointers one step forward. It's like re-linking the cars of a train one by one in the opposite direction."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 66,
+    "problems": [
+      {
+        "name": "Rotate a Linked List",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Linked List"],
+        "emojis": ["🔄", "🔗"],
+        "notes": "The optimal approach for this is to make the list circular! I found the length of the list, connected the last node to the head, found the new tail (at `length - k - 1`), and then broke the link after it. The node after the new tail becomes the new head. It's a clever way to avoid complex pointer juggling."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 67,
+    "problems": [
+      {
+        "name": "Merge Two Sorted Linked Lists",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Linked List"],
+        "emojis": ["🔄", "🔗"],
+        "notes": "This problem reinforced my skills in building a new list from existing nodes. I used a dummy head node to simplify the code, and a `tail` pointer to build the new list by always appending the smaller of the two heads from the input lists. The recursive solution is also very elegant."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 68,
+    "problems": [
+      {
+        "name": "Linked List Group Reverse",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Linked List", "Recursion"],
+        "emojis": ["🔄", "🔗"],
+        "notes": "Recursion was the most intuitive way to solve this. I reversed the first `k` nodes iteratively. The `k+1`-th node is the head of the rest of the list, which I passed to the recursive call. The head of the original `k` nodes then points to the result of the recursion. A great example of 'solve one part, recurse on the rest'."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 69,
+    "problems": [
+      {
+        "name": "Add Number Linked Lists",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Linked List"],
+        "emojis": ["➕", "🔗"],
+        "notes": "This is similar to adding binary strings, but with a linked list structure. I first reversed both lists to make addition easier from the least significant digit. Then, I iterated through them, adding digits with a carry, and creating new nodes for the result list. Finally, I reversed the result list back. Fun fact: This mimics how old mechanical calculators worked."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 70,
+    "problems": [
+      {
+        "name": "Clone List with Next and Random",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Linked List", "Hashing"],
+        "emojis": ["🐑", "🔗"],
+        "notes": "A truly clever problem. The O(1) space solution is brilliant. First, I interleaved the new, cloned nodes with the original ones (A -> A' -> B -> B'). Second, I set the random pointers for the cloned nodes (`A'.random = A.random.next`). Finally, I separated the two lists. This avoids using a hash map and is a masterclass in pointer manipulation."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 71,
+    "problems": [
+      {
+        "name": "Detect Loop in Linked List",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Linked List", "Two Pointers"],
+        "emojis": ["🔍", "🔄"],
+        "notes": "This problem introduced me to Floyd's Cycle-Finding Algorithm, also known as the Tortoise and the Hare. Using a slow pointer (moves 1 step) and a fast pointer (moves 2 steps), if there's a loop, the fast one is guaranteed to lap the slow one eventually. It's an incredibly intuitive and efficient solution."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 72,
+    "problems": [
+      {
+        "name": "Find the First Node of Loop in Linked List",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Linked List", "Two Pointers"],
+        "emojis": ["🎯", "🔄"],
+        "notes": "This is the second part of Floyd's algorithm. After the slow and fast pointers meet, if you move one pointer back to the head and then advance both pointers one step at a time, they will meet at the start of the loop. The mathematical proof for this is fascinating!"
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 73,
+    "problems": [
+      {
+        "name": "Remove Loop in Linked List",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Linked List", "Two Pointers"],
+        "emojis": ["✂️", "🔄"],
+        "notes": "This combines the previous two problems. First, detect the loop. Second, find the start of the loop. To remove it, I needed to find the node *just before* the start of the loop and set its `next` pointer to `null`. This required carefully traversing to find that predecessor node after finding the loop's entry point."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 74,
+    "problems": [
+      {
+        "name": "LRU Cache",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Hashing", "Linked List", "Design"],
+        "emojis": ["💾", "🧠"],
+        "notes": "A classic design problem. The key to an efficient LRU Cache is combining a hash map for O(1) lookups and a doubly linked list for O(1) additions/removals of the most/least recently used items. The map stores keys and pointers to the list nodes. This problem was a fantastic lesson in how two data structures can work together to achieve amazing performance."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 75,
+    "problems": [
+      {
+        "name": "Permutations of a String",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Recursion", "Backtracking"],
+        "emojis": ["🔄", "📜"],
+        "notes": "This was my deep dive into backtracking. The approach is to build a permutation character by character. At each step, I'd pick an unused character, add it to the current path, and recurse. After the recursive call returns, I'd 'un-pick' it (backtrack) to explore other possibilities. It's like exploring every path in a maze."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 76,
+    "problems": [
+      {
+        "name": "Implement Pow",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Recursion", "Math"],
+        "emojis": ["✖️", "➗"],
+        "notes": "This problem taught me the power of binary exponentiation (also called exponentiation by squaring). Instead of multiplying `x` by itself `n` times, I could calculate `x^(n/2)` recursively and square the result. This reduces the time complexity from O(n) to O(log n). It's a huge performance gain for large exponents."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 77,
+    "problems": [
+      {
+        "name": "N-Queen Problem",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Backtracking"],
+        "emojis": ["👑", "♟️"],
+        "notes": "The canonical backtracking problem. The approach is to place queens one row at a time. Before placing a queen in a column, I had to check if it was safe (no other queens in the same column or diagonals). If it was, I'd place it and recurse to the next row. If not, I'd backtrack. Keeping track of attacked diagonals was the clever part."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 78,
+    "problems": [
+      {
+        "name": "Solve the Sudoku",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Backtracking"],
+        "emojis": ["🧩", "🔢"],
+        "notes": "This felt like building a Sudoku solver AI. The backtracking approach is to find an empty cell, try placing each number from 1 to 9, and check if it's valid. If it is, recurse to the next empty cell. If the recursion leads to a dead end, backtrack and try the next number. It's a brute-force search, but a very smart one."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 79,
+    "problems": [
+      {
+        "name": "Word Search",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Backtracking", "Matrix"],
+        "emojis": ["🔍", "📜"],
+        "notes": "This problem uses DFS (Depth First Search) with backtracking on a matrix. I started a DFS from every cell that matched the first letter of the word. In the DFS, I explored all four directions, marking visited cells to avoid using them twice in the same path. If a path didn't lead to the full word, I'd backtrack by un-marking the cell."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 80,
+    "problems": [
+      {
+        "name": "Level Order Traversal",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Trees", "BFS"],
+        "emojis": ["🌳", "➡️"],
+        "notes": "This is the classic application of Breadth-First Search (BFS) on a tree. I used a queue to keep track of nodes to visit. At each step, I processed all nodes at the current level, adding their children to the queue for the next level. It's a great way to explore a tree layer by layer, like ripples in a pond."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 81,
+    "problems": [
+      {
+        "name": "Height of Binary Tree",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Trees", "DFS"],
+        "emojis": ["🌳", "📏"],
+        "notes": "A simple and elegant recursive solution. The height of a tree is 1 plus the maximum of the heights of its left and right subtrees. The base case is a null node, which has a height of 0. This problem is a perfect example of the beauty and simplicity of recursive thinking."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 82,
+    "problems": [
+      {
+        "name": "Diameter of a Binary Tree",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Trees", "DFS"],
+        "emojis": ["🌳", "↔️"],
+        "notes": "This one is tricky because the longest path might not pass through the root. The solution is to calculate the height of each subtree recursively. At each node, the potential diameter is `height(left) + height(right)`. I kept a global variable to track the maximum diameter found so far during the traversal."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 83,
+    "problems": [
+      {
+        "name": "Mirror Tree",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Trees"],
+        "emojis": ["🌳", "🪞"],
+        "notes": "Another simple recursive problem that demonstrates the power of tree traversals. I traversed the tree (post-order is intuitive here) and at each node, I simply swapped its left and right children. That's it! A few lines of code to flip an entire tree."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 84,
+    "problems": [
+      {
+        "name": "Construct Tree from Inorder & Preorder",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Trees"],
+        "emojis": ["🌳", "🏗️"],
+        "notes": "This problem taught me the fundamental properties of traversals. The first element of a preorder traversal is always the root. The inorder traversal shows everything to the left of the root and everything to the right. I used this logic recursively to build the tree, using a map of inorder values to indices for quick lookups."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 85,
+    "problems": [
+      {
+        "name": "Inorder Traversal",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Trees", "DFS"],
+        "emojis": ["🌳", "🚶"],
+        "notes": "Left, Root, Right. This traversal is fundamental. The recursive solution is trivial, but the iterative solution using a stack was a great exercise. It forces you to manually manage the traversal path, pushing nodes onto the stack as you go left, then popping and visiting as you go right."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 86,
+    "problems": [
+      {
+        "name": "Tree Boundary Traversal",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Trees"],
+        "emojis": ["🌳", "🏞️"],
+        "notes": "This problem is about combining different traversal types. The solution is to do it in three parts: 1. Print the left boundary (excluding leaves). 2. Print all the leaf nodes using a standard traversal. 3. Print the right boundary in reverse order (excluding leaves). Careful handling of edge cases is key."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 87,
+    "problems": [
+      {
+        "name": "Maximum Path Sum from Any Node",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Trees", "DFS"],
+        "emojis": ["🌳", "➕"],
+        "notes": "A very challenging tree problem. The key insight is that for any node, the recursive function should return the maximum path sum starting from that node and going *downwards* in one direction. However, inside the function, you calculate the potential maximum path sum that *passes through* that node (left_path + right_path + node.val) and update a global max. This disconnect is crucial."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 88,
+    "problems": [
+      {
+        "name": "K Sum Paths",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Trees", "DFS"],
+        "emojis": ["🌳", " K"],
+        "notes": "This is 'Subarray Sum K' on a tree! I used a DFS traversal with a path sum. A hash map stored the frequency of prefix sums from the root to the current node. At each node, I checked if `current_sum - k` existed in the map, which would indicate a valid path ending at the current node. Backtracking by decrementing the path sum's count in the map was essential."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 89,
+    "problems": [
+      {
+        "name": "Check for BST",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Trees", "BST"],
+        "emojis": ["🌳", "✅"],
+        "notes": "A simple check isn't enough; the entire left subtree must be smaller and the entire right subtree must be larger. The correct way is to do a recursive traversal while passing down a valid range (min and max). For a node's left child, the new max is the node's value. For the right child, the new min is the node's value."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 90,
+    "problems": [
+      {
+        "name": "K-th Smallest in BST",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Trees", "BST"],
+        "emojis": ["🌳", " Kth"],
+        "notes": "The key property of a Binary Search Tree is that an inorder traversal visits the nodes in sorted order. So, I just performed an inorder traversal and stopped at the k-th element visited. An iterative inorder traversal with a stack is very efficient for this."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 91,
+    "problems": [
+      {
+        "name": "Pair Sum in BST",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Trees", "BST"],
+        "emojis": ["🌳", "➕"],
+        "notes": "This is 'Two Sum' in a BST. A simple approach is to perform an inorder traversal to get a sorted array, and then use the two-pointer technique. A more optimized method uses two stacks to simulate a forward and backward inorder traversal simultaneously, achieving O(n) time and O(log n) space."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 92,
+    "problems": [
+      {
+        "name": "Fixing Two Nodes of a BST",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Trees", "BST"],
+        "emojis": ["🌳", "🔧"],
+        "notes": "When two nodes in a BST are swapped, the sorted order of the inorder traversal gets disrupted at exactly two points. I performed an inorder traversal, keeping track of the `previous` node. I found the two nodes that violated the BST property (`prev.val > current.val`) and then swapped their values to fix the tree."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 93,
+    "problems": [
+      {
+        "name": "Lowest Common Ancestor in a BST",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Trees", "BST"],
+        "emojis": ["🌳", "👴"],
+        "notes": "The BST property makes this very efficient. The LCA is the node where the two target values split into its left and right subtrees. I just traversed from the root: if both values are smaller, go left; if both are larger, go right. The moment they are on opposite sides, I've found the LCA."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 94,
+    "problems": [
+      {
+        "name": "Serialize and Deserialize a Binary Tree",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Trees", "Design"],
+        "emojis": ["🌳", "📦"],
+        "notes": "A fantastic design problem. I used a preorder traversal to serialize the tree into a string, using a special character (like '#') for null nodes. To deserialize, I used a queue (or a global index) on the split string. I built the tree recursively, taking the next value from the queue for each node. The '#' markers are crucial for reconstructing the tree structure correctly."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 95,
+    "problems": [
+      {
+        "name": "k Largest Elements",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Heap", "Priority Queue"],
+        "emojis": ["🔥", " K"],
+        "notes": "A perfect use case for a min-heap. I iterated through the array, pushing elements onto a heap of size `k`. If the heap grew larger than `k`, I popped the smallest element. At the end, the heap contains the `k` largest elements. Fun fact: This is more efficient (O(n log k)) than sorting the whole array (O(n log n)) if `k` is much smaller than `n`."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 96,
+    "problems": [
+      {
+        "name": "K Closest Points to Origin",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Heap", "Priority Queue"],
+        "emojis": ["🔥", "🎯"],
+        "notes": "This problem is similar to 'k Largest Elements', but with a custom comparator. I used a max-heap of size `k`. I iterated through the points, and if a point's distance was smaller than the largest distance in the heap, I popped the max and pushed the new point. At the end, the heap contained the `k` closest points."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 97,
+    "problems": [
+      {
+        "name": "Merge K Sorted Linked Lists",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Heap", "Linked List"],
+        "emojis": ["🔥", "🔗"],
+        "notes": "A min-heap is the champion here. I pushed the head of all `k` lists into a min-heap. Then, in a loop, I popped the smallest node from the heap, added it to my result list, and pushed its `next` node into the heap. This process efficiently finds the next smallest element among all lists at every step."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 98,
+    "problems": [
+      {
+        "name": "Find Median in a Stream",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Heap", "Design"],
+        "emojis": ["🔥", "🌊"],
+        "notes": "A brilliant data structure design problem. The solution is to use two heaps: a max-heap for the smaller half of the numbers and a min-heap for the larger half. By keeping the heaps balanced (or nearly balanced), the median is always available at the top of one or both heaps in O(1) time. Adding a new number takes O(log n) time."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 99,
+    "problems": [
+      {
+        "name": "Parenthesis Checker",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Stack"],
+        "emojis": ["📚", "✅"],
+        "notes": "The classic use case for a stack: Last-In, First-Out. When I saw an opening bracket, I pushed it onto the stack. When I saw a closing bracket, I popped from the stack and checked if it was a matching pair. The stack is like a memory of unclosed parentheses, waiting for their partners."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 100,
+    "problems": [
+      {
+        "name": "Longest Valid Parentheses",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Stack", "Strings"],
+        "emojis": ["📚", "📈"],
+        "notes": "A very tricky stack problem. Instead of storing the brackets, I stored their *indices*. I pushed the index of every opening bracket. When a closing bracket appeared, I popped. The length of the valid string is the current index minus the index at the top of the stack. A clever DP solution also exists, but the stack approach was more intuitive for me."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 101,
+    "problems": [
+      {
+        "name": "Next Greater Element",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Stack", "Arrays"],
+        "emojis": ["📚", "➡️"],
+        "notes": "This problem introduced me to the monotonic stack pattern. I iterated through the array from right to left. The stack maintained a decreasing sequence of elements. For each element, I popped from the stack while the top was smaller. The element at the top of the stack was then the next greater element. A powerful pattern for many problems."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 102,
+    "problems": [
+      {
+        "name": "Stock Span Problem",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Stack", "Arrays"],
+        "emojis": ["📚", "📈"],
+        "notes": "Another monotonic stack problem. This time, I iterated from left to right. The stack stored indices of days with decreasing stock prices. For each day, I popped from the stack while the price on the day at the top of the stack was less than or equal to the current day's price. The span is the current day's index minus the index at the top of the stack."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 103,
+    "problems": [
+      {
+        "name": "Histogram Max Rectangular Area",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Stack", "Arrays"],
+        "emojis": ["📚", "📊"],
+        "notes": "A challenging but beautiful monotonic stack problem. The stack stores indices of bars in increasing height. When I found a bar shorter than the one at the top of the stack, I knew the popped bar was the shortest in a certain range. I could then calculate the area for that popped bar. It's like finding the largest rectangle that each bar can be the minimum height of."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 104,
+    "problems": [
+      {
+        "name": "Maximum of Minimum for Every Window Size",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Stack", "Arrays"],
+        "emojis": ["📚", "🖼️"],
+        "notes": "This problem was a multi-step puzzle. First, I used a monotonic stack to find the 'previous smaller' and 'next smaller' element for every element in the array. This tells you the window size for which that element is the minimum. Then, I processed these results to find the final answer. A very clever combination of techniques."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 105,
+    "problems": [
+      {
+        "name": "Get Min from Stack",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Stack", "Design"],
+        "emojis": ["📚", "🔽"],
+        "notes": "A great data structure design question. The solution is to use a second stack (or store pairs in one stack) to keep track of the minimum element at every stage. When I push a new element, I also push `min(new_element, current_min)` onto the min_stack. This way, the current minimum is always available at the top in O(1) time."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 106,
+    "problems": [
+      {
+        "name": "Evaluation of Postfix Expression",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Stack"],
+        "emojis": ["📚", "🧮"],
+        "notes": "Postfix (or Reverse Polish Notation) is perfect for stack-based evaluation. I iterated through the expression: if it was a number, I pushed it onto the stack. If it was an operator, I popped the top two numbers, performed the operation, and pushed the result back. Fun fact: This is how many early calculators and programming languages worked, as it doesn't require parentheses."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 107,
+    "problems": [
+      {
+        "name": "Decode the String",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Stack", "Strings"],
+        "emojis": ["📚", "📜"],
+        "notes": "This problem screamed 'stack'! I used two stacks: one for numbers (the repetition counts) and one for strings. When I encountered a '[', I pushed the current string and count. When I saw a ']', I popped them, repeated the string, and appended it to the previous string on the stack. It's a great way to handle nested structures."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 108,
+    "problems": [
+      {
+        "name": "K-Sized Subarray Maximum",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Queue", "Sliding Window"],
+        "emojis": ["↔️", "🔼"],
+        "notes": "A double-ended queue (deque) is the perfect data structure for this. I maintained a deque of indices of elements in the current window, in decreasing order of their values. The front of the deque was always the maximum element in the window. As the window slid, I added and removed elements from the deque to maintain this property. An O(n) solution."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 109,
+    "problems": [
+      {
+        "name": "Longest Bounded-Difference Subarray",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Queue", "Sliding Window"],
+        "emojis": ["↔️", "📈"],
+        "notes": "This sliding window problem required keeping track of both the min and max in the current window. I used two deques: one to track the maximum (like the previous problem) and another to track the minimum. I expanded the window, and if the difference between the max and min exceeded the limit, I shrank the window from the left."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 110,
+    "problems": [
+      {
+        "name": "Longest Increasing Subsequence",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Dynamic Programming"],
+        "emojis": ["📈", "⛓️"],
+        "notes": "A foundational DP problem. The O(n^2) solution involves a DP array where `dp[i]` is the length of the LIS ending at index `i`. A more advanced O(n log n) solution maintains a sorted array (or 'patience sorting') of the smallest tail of all increasing subsequences. This was a big leap in my DP understanding."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 111,
+    "problems": [
+      {
+        "name": "Longest String Chain",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Dynamic Programming", "Strings"],
+        "emojis": ["⛓️", "📜"],
+        "notes": "This is LIS in disguise! I first sorted the words by length. Then, I used a hash map to store the longest chain ending at each word. For each word, I tried removing one character at a time to form a predecessor, and if that predecessor was in the map, I could potentially extend its chain."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 112,
+    "problems": [
+      {
+        "name": "Longest Common Subsequence",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Dynamic Programming"],
+        "emojis": ["⛓️", "🤝"],
+        "notes": "The classic 2D DP problem. I built a table where `dp[i][j]` represents the LCS of the first `i` characters of string1 and the first `j` characters of string2. The state transition depends on whether `s1[i] == s2[j]`. Fun fact: LCS is used in bioinformatics to compare DNA sequences and in version control systems (like Git) to find differences between files."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 113,
+    "problems": [
+      {
+        "name": "Longest Palindromic Subsequence",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Dynamic Programming"],
+        "emojis": ["⛓️", " palindrome"],
+        "notes": "A clever trick transforms this into another problem. The Longest Palindromic Subsequence of a string `s` is simply the Longest Common Subsequence of `s` and `reverse(s)`. Reusing the LCS logic I just learned made this solution feel very satisfying."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 114,
+    "problems": [
+      {
+        "name": "Longest Palindrome in a String",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Dynamic Programming", "Strings"],
+        "emojis": ["📈", " palindrome"],
+        "notes": "This problem is about finding the longest palindromic *substring* (contiguous). The 'expand from center' approach is very efficient. I iterated through each character, treating it as the center of a potential palindrome (for both odd and even lengths), and expanded outwards as long as the characters matched."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 115,
+    "problems": [
+      {
+        "name": "Palindrome SubStrings",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Strings", "Dynamic Programming"],
+        "emojis": ["🔢", " palindrome"],
+        "notes": "Counting all palindromic substrings. The 'expand from center' approach worked well here too. For each possible center (every character and every space between characters), I expanded outwards and incremented my count for every valid palindrome found."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 116,
+    "problems": [
+      {
+        "name": "Edit Distance",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Dynamic Programming", "Strings"],
+        "emojis": ["✏️", "📏"],
+        "notes": "Also known as Levenshtein distance, this is a fundamental DP problem. I built a 2D DP table where `dp[i][j]` is the minimum edits to convert the first `i` chars of word1 to the first `j` chars of word2. The state transition considers three choices: insert, delete, or replace. It’s used in spell checkers and DNA analysis."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 117,
+    "problems": [
+      {
+        "name": "Ways to Reach the n’th Stair",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Dynamic Programming"],
+        "emojis": ["🪜", "🔢"],
+        "notes": "A great introduction to DP. The number of ways to reach stair `n` is the sum of ways to reach `n-1` and `n-2`. This is the Fibonacci sequence! The bottom-up DP approach with an array is very clear, and it can be optimized to O(1) space by only keeping track of the last two values."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 118,
+    "problems": [
+      {
+        "name": "Min Cost Climbing Stairs",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Dynamic Programming"],
+        "emojis": ["🪜", "💰"],
+        "notes": "Similar to the previous problem, but with costs. The minimum cost to reach stair `i` is `cost[i] + min(cost_to_reach[i-1], cost_to_reach[i-2])`. I built a DP array to store these minimum costs, solving it bottom-up. Again, this can be optimized to O(1) space."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 119,
+    "problems": [
+      {
+        "name": "0–1 Knapsack Problem",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Dynamic Programming"],
+        "emojis": ["🎒", "⚖️"],
+        "notes": "The quintessential DP problem. It's about making a choice for each item: either include it in the knapsack or don't. I built a 2D DP table where `dp[i][w]` was the max value using items up to `i` with a weight capacity of `w`. Fun fact: The knapsack problem is NP-hard, but our DP solution is efficient for integer weights."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 120,
+    "problems": [
+      {
+        "name": "Coin Change (Count Ways)",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Dynamic Programming"],
+        "emojis": ["🪙", "🔢"],
+        "notes": "This is an 'unbounded knapsack' variation since I can use each coin multiple times. I used a 1D DP array where `dp[i]` is the number of ways to make change for amount `i`. For each coin, I iterated through the amounts and updated the `dp` array. The order of loops is crucial here."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 121,
+    "problems": [
+      {
+        "name": "Coin Change (Minimum Coins)",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Dynamic Programming"],
+        "emojis": ["🪙", "🔽"],
+        "notes": "Another coin change variation, but this time for optimization. The DP state `dp[i]` represents the minimum number of coins needed to make amount `i`. The state transition is `dp[i] = min(dp[i], dp[i - coin] + 1)`. A classic bottom-up DP approach."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 122,
+    "problems": [
+      {
+        "name": "Minimum Jumps",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Dynamic Programming", "Greedy"],
+        "emojis": ["🏃", "🔽"],
+        "notes": "While a DP solution exists, the greedy O(n) solution is brilliant. I kept track of the `max_reach` possible from the current position and the number of `steps` left within the current jump. When `steps` ran out, I took another jump and updated `steps` to the new `max_reach`."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 123,
+    "problems": [
+      {
+        "name": "Subset Sum Problem",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Dynamic Programming", "Arrays"],
+        "emojis": ["🎯", "🤔"],
+        "notes": "A foundational DP problem that's a variation of the knapsack problem. I used a 2D DP table where `dp[i][j]` is true if a sum of `j` can be achieved using the first `i` elements. The logic for each cell is: can I make sum `j` without the current element, OR can I make sum `j - current_element` with the previous elements?"
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 124,
+    "problems": [
+      {
+        "name": "Partition Equal Subset Sum",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Dynamic Programming", "Arrays"],
+        "emojis": ["⚖️", "🤔"],
+        "notes": "This problem can be reduced to the Subset Sum problem! If the total sum of the array is odd, it's impossible. If it's even, the problem is simply to find if there's a subset that sums to `total_sum / 2`. I just reused my Subset Sum logic. It's awesome when you can solve a new problem with an old one."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 125,
+    "problems": [
+      {
+        "name": "Stock Buy and Sell – Max K Transactions Allowed",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Dynamic Programming"],
+        "emojis": ["📈", " K"],
+        "notes": "A very challenging DP problem. The state needs to track three things: the day, the number of transactions completed, and whether I'm currently holding a stock. `dp[i][j][0]` = max profit on day `i` with `j` transactions, no stock held. `dp[i][j][1]` = same, but stock held. The state transitions are based on buying, selling, or doing nothing."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 126,
+    "problems": [
+      {
+        "name": "Stock Buy and Sell – Max 2 Transactions Allowed",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Dynamic Programming"],
+        "emojis": ["📈", "✌️"],
+        "notes": "This is a specific case of the K-transactions problem. A more intuitive DP approach tracks four states: `buy1`, `sell1`, `buy2`, `sell2`. I iterated through the prices and updated these four variables, representing the maximum profit after the first buy, first sell, second buy, and second sell. It’s a very clever state representation."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 127,
+    "problems": [
+      {
+        "name": "Stickler Thief",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Dynamic Programming"],
+        "emojis": ["🥷", "💰"],
+        "notes": "This is the 'House Robber' problem. The DP logic is simple: the max money I can rob up to house `i` is `max(rob(i-1), rob(i-2) + money[i])`. It's a choice between robbing the current house (and taking the loot from two houses ago) or skipping it (and taking the loot from the previous house). Can be optimized to O(1) space."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 128,
+    "problems": [
+      {
+        "name": "Stickler Thief II",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Dynamic Programming"],
+        "emojis": ["🥷", "🏠"],
+        "notes": "The 'House Robber II' variant where the houses are in a circle. This means the first and last houses are adjacent. The solution is to run the original House Robber algorithm twice: once on the array excluding the last house, and once on the array excluding the first house. The answer is the maximum of these two results."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 129,
+    "problems": [
+      {
+        "name": "Total Decoding Messages",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Dynamic Programming"],
+        "emojis": ["🔢", "📜"],
+        "notes": "A string-based DP problem. `dp[i]` is the number of ways to decode the first `i` characters. The number of ways to decode up to `i` depends on the ways to decode up to `i-1` (if the i-th character is a valid single digit) and the ways to decode up to `i-2` (if the last two characters form a valid number from 10-26). It's very similar to the climbing stairs problem."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 130,
+    "problems": [
+      {
+        "name": "Matrix Chain Multiplication",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Dynamic Programming"],
+        "emojis": [" M", "✖️"],
+        "notes": "A classic DP problem that taught me about optimal substructure and overlapping subproblems. The goal is to find the most efficient way to parenthesize a chain of matrix multiplications. `dp[i][j]` stores the minimum cost to multiply matrices from `i` to `j`. I had to iterate over all possible split points `k` between `i` and `j`."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 131,
+    "problems": [
+      {
+        "name": "Boolean Parenthesization",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Dynamic Programming"],
+        "emojis": ["🤔", "🔢"],
+        "notes": "This builds on Matrix Chain Multiplication but is much harder. The DP state `dp[i][j]` had to be a pair of values: the number of ways the sub-expression from `i` to `j` can evaluate to `true`, and the number of ways it can evaluate to `false`. The transitions were complex, considering all operators (`&`, `|`, `^`) and all possible split points."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 132,
+    "problems": [
+      {
+        "name": "Word Break",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Dynamic Programming", "Trie"],
+        "emojis": ["📜", "✂️"],
+        "notes": "A great DP problem on strings. I used a DP array where `dp[i]` is true if the substring `s[0...i-1]` can be segmented. To compute `dp[i]`, I checked for all `j < i` if `dp[j]` was true AND the substring `s[j...i-1]` was a valid word in the dictionary. Using a Trie for the dictionary lookup makes it very efficient."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 133,
+    "problems": [
+      {
+        "name": "Minimum Platforms",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Greedy", "Arrays", "Sorting"],
+        "emojis": ["🚂", "🚉"],
+        "notes": "This problem can be thought of as finding the maximum number of overlapping events. The greedy approach is to sort the arrival and departure times separately. Then, I used two pointers to iterate through them. If the next event is an arrival, I need one more platform. If it's a departure, one platform is freed. It's like managing airport runways!"
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 134,
+    "problems": [
+      {
+        "name": "Activity Selection",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Greedy", "Sorting"],
+        "emojis": ["🏃‍♀️", "🗓️"],
+        "notes": "The classic greedy algorithm introduction. The winning strategy is to sort the activities by their finish times. Then, I greedily selected the first activity and kept picking the next activity that starts after the previously selected one finishes. Choosing the activity that finishes earliest always leaves the maximum time for other activities."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 135,
+    "problems": [
+      {
+        "name": "Job Sequencing Problem",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Greedy", "Sorting"],
+        "emojis": ["💼", "💰"],
+        "notes": "Another greedy problem with a twist. I first sorted the jobs by their profit in descending order. Then, for each job, I tried to place it in the latest possible time slot available before its deadline. I used an array or a disjoint set to keep track of available time slots. It's about prioritizing the most valuable tasks first."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 136,
+    "problems": [
+      {
+        "name": "Gas Station",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Greedy", "Arrays"],
+        "emojis": ["⛽", "🚗"],
+        "notes": "This greedy problem has a crucial insight: if the total gas is more than the total cost, a solution is guaranteed to exist. I iterated through the stations, tracking the current tank level. If the tank ever went below zero, I knew none of the previous stations could be the starting point, so I reset the start to the next station. A very clean O(n) solution."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 137,
+    "problems": [
+      {
+        "name": "Maximize Partitions in a String",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Greedy", "Strings"],
+        "emojis": ["✂️", "📜"],
+        "notes": "A greedy string problem. I first created a map of the last occurrence of each character. Then, I iterated through the string, keeping track of the 'end' of the current partition (the farthest last occurrence of any character seen so far). When my iteration index reached this 'end', I knew I could make a cut. It's like closing a fence once all the animals that belong inside have entered."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 138,
+    "problems": [
+      {
+        "name": "DFS of Graph",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Graphs", "DFS"],
+        "emojis": ["📈", "🚶"],
+        "notes": "Implementing Depth First Search was a great exercise in recursion and graph traversal. I used a 'visited' array to avoid cycles. The algorithm explores as far as possible down one path before backtracking. It's like exploring a maze by always taking the rightmost turn until you hit a dead end, then backtracking."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 139,
+    "problems": [
+      {
+        "name": "BFS of Graph",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Graphs", "BFS"],
+        "emojis": ["📈", "🌊"],
+        "notes": "Breadth-First Search explores level by level. I used a queue to manage the nodes to visit. This guarantees that I visit all nodes at a certain distance from the source before moving to the next level. Fun fact: BFS is used to find the shortest path in an unweighted graph."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 140,
+    "problems": [
+      {
+        "name": "Rotten Oranges",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Graphs", "BFS"],
+        "emojis": ["🍊", "🤢"],
+        "notes": "A perfect problem for multi-source BFS. I started the BFS by adding all initially rotten oranges to the queue. The 'levels' of the BFS correspond to minutes passing. I kept track of the number of fresh oranges, and after the BFS was done, if any were left, it was impossible to rot them all. It's a great model for propagation problems."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 141,
+    "problems": [
+      {
+        "name": "Undirected Graph Cycle",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Graphs", "DFS"],
+        "emojis": ["📈", "🔄"],
+        "notes": "Detecting a cycle with DFS requires a small tweak. During the traversal, if I encounter a node that is already visited but is *not* the immediate parent of the current node, I've found a back edge, which means there's a cycle. The 'parent' tracking is the key to distinguishing a cycle from a simple two-way edge."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 142,
+    "problems": [
+      {
+        "name": "Number of Islands",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Graphs", "DFS", "BFS"],
+        "emojis": ["🏝️", "🔢"],
+        "notes": "A classic grid traversal problem. I iterated through the grid, and whenever I found a '1' (land), I incremented my island count and started a traversal (DFS or BFS) from that cell. The traversal's job is to visit all connected land cells and 'sink' them (e.g., change to '0') so I don't count them again. It's like coloring in all connected parts of a map."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 143,
+    "problems": [
+      {
+        "name": "Topological Sort",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Graphs", "DFS", "Topological Sort"],
+        "emojis": ["📈", "📊"],
+        "notes": "This is for Directed Acyclic Graphs (DAGs). Kahn's algorithm (using BFS and in-degrees) is one way. I used the DFS approach: perform a DFS, and when a node's exploration is completely finished (all its descendants visited), add it to the front of a list or the top of a stack. The final list is the topological sort. It's used for task scheduling with dependencies."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 144,
+    "problems": [
+      {
+        "name": "Directed Graph Cycle",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Graphs", "DFS"],
+        "emojis": ["📈", "🔄"],
+        "notes": "Detecting a cycle in a directed graph requires tracking the recursion stack. I used two 'visited' arrays: one to track visited nodes in general, and another (`recursionStack`) to track nodes currently in my DFS path. If I encounter a node that's in the `recursionStack`, I've found a back edge and thus a cycle."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 145,
+    "problems": [
+      {
+        "name": "Bridge Edge in a Graph",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Graphs", "DFS"],
+        "emojis": ["🌉", "📈"],
+        "notes": "This introduced me to Tarjan's Bridge-Finding Algorithm. It's a single DFS traversal where I keep track of the 'discovery time' of each node and the 'low-link' value (the lowest discovery time reachable from that node). A bridge exists from `u` to `v` if `low[v] > disc[u]`. A very powerful graph algorithm."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 146,
+    "problems": [
+      {
+        "name": "Articulation Point – II",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Graphs", "DFS"],
+        "emojis": ["📍", "📈"],
+        "notes": "Similar to finding bridges, this uses discovery times and low-link values. An articulation point (or cut vertex) is a node whose removal increases the number of connected components. A non-root node `u` is an articulation point if it has a child `v` such that `low[v] >= disc[u]`. This means `v` can't reach back to an ancestor of `u` without passing through `u`."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 147,
+    "problems": [
+      {
+        "name": "Minimum Cost to Connect All Houses in a City",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Graphs", "MST", "Prim's Algorithm"],
+        "emojis": ["🏠", "💰"],
+        "notes": "This is a classic Minimum Spanning Tree (MST) problem. I used Prim's algorithm, which is a greedy approach. I started from an arbitrary node and used a priority queue to always add the cheapest edge that connects a node in my MST to a node outside of it. It's like building a city's water pipe network for the lowest cost."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 148,
+    "problems": [
+      {
+        "name": "Dijkstra’s Algorithm",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Graphs", "Shortest Path"],
+        "emojis": ["📈", "🗺️"],
+        "notes": "The GPS of algorithms! Dijkstra's finds the shortest path from a single source to all other nodes in a weighted graph. I used a priority queue to always explore the nearest unvisited node. Fun fact: Edsger Dijkstra designed this in 1956 in about 20 minutes without pen or paper!"
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 149,
+    "problems": [
+      {
+        "name": "Flood Fill Algorithm",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Graphs", "DFS", "BFS"],
+        "emojis": ["🎨", "🌊"],
+        "notes": "This is essentially a graph traversal on a grid. Starting from a given pixel, I used DFS (or BFS) to explore all adjacent pixels of the same color, changing their color to the new one. It's the same algorithm used in paint bucket tools in image editors."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 150,
+    "problems": [
+      {
+        "name": "Account Merge",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Graphs", "Union Find"],
+        "emojis": ["📧", "🔄"],
+        "notes": "This problem is a perfect fit for the Union-Find (or Disjoint Set Union) data structure. I treated each email as a node. For each account, I 'unioned' all its emails together into a single set. After processing all accounts, I could easily group the emails by their root parent. A very powerful data structure for connectivity problems."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 151,
+    "problems": [
+      {
+        "name": "Clone an Undirected Graph",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Graphs", "DFS", "BFS"],
+        "emojis": ["🐑", "📈"],
+        "notes": "Cloning a graph requires handling cycles and shared nodes correctly. I used a hash map to store a mapping from original nodes to their clones. I then performed a traversal (BFS is intuitive here). For each node I visited, I iterated through its neighbors, creating clones if they didn't exist yet in the map, and connecting them."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 152,
+    "problems": [
+      {
+        "name": "Alien Dictionary",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Graphs", "Topological Sort"],
+        "emojis": ["👽", "📜"],
+        "notes": "This problem is about finding the character order, which is a big hint for Topological Sort. I built a directed graph by comparing adjacent words in the sorted list. The first differing character gave me a dependency (e.g., in ['wrt', 'wrf'], 't' must come before 'f'). Then, I just performed a topological sort on this graph of characters."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 153,
+    "problems": [
+      {
+        "name": "Bellman-Ford",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Graphs", "Shortest Path"],
+        "emojis": ["📈", "🛎️"],
+        "notes": "Unlike Dijkstra's, Bellman-Ford can handle negative edge weights. The approach is to 'relax' all edges `V-1` times. This guarantees finding the shortest path if no negative cycles exist. A final, `V`-th relaxation can be used to detect the presence of negative cycles. It's slower than Dijkstra's but more versatile."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 154,
+    "problems": [
+      {
+        "name": "Floyd Warshall",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Graphs", "Shortest Path"],
+        "emojis": ["📈", "🗺️"],
+        "notes": "This algorithm is for finding all-pairs shortest paths. It's a DP approach where `dist[i][j]` is the shortest path between nodes `i` and `j`. The algorithm iteratively considers each node `k` as a potential intermediate node in the path from `i` to `j`. It's a simple, elegant O(V^3) solution."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 155,
+    "problems": [
+      {
+        "name": "Minimum Weight Cycle",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Hard",
+        "topics": ["Graphs", "Shortest Path"],
+        "emojis": ["🔄", "⚖️"],
+        "notes": "A tough problem that combines several ideas. My approach was to iterate through every edge `(u, v)` with weight `w`. For each edge, I temporarily removed it and then found the shortest path from `u` to `v` in the remaining graph using Dijkstra's. The cycle weight is then `shortest_path(u, v) + w`. I kept track of the minimum such value found."
+      }
+    ],
+    "color": "#f87171"
+  },
+  {
+    "day": 156,
+    "problems": [
+      {
+        "name": "Implement Trie",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Trie", "Design"],
+        "emojis": ["🌳", "📜"],
+        "notes": "Building a Trie (prefix tree) was a great data structure exercise. Each node has an array of children (one for each letter) and a boolean flag to mark the end of a word. Inserting and searching for words involves traversing the tree character by character. Fun fact: Tries are the data structure behind autocomplete features in search engines and phones."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 157,
+    "problems": [
+      {
+        "name": "Maximum XOR of Two Numbers in an Array",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Trie", "Bit Manipulation"],
+        "emojis": ["💡", "🔼"],
+        "notes": "A surprising application of Tries. I built a Trie of the binary representations of all numbers in the array. Then, for each number, I traversed the Trie to find the number that would give the maximum XOR. At each bit position, I greedily tried to go in the opposite direction of the current number's bit to maximize the XOR result."
+      }
+    ],
+    "color": "#facc15"
+  },
+  {
+    "day": 158,
+    "problems": [
+      {
+        "name": "Find Only Repetitive Element from 1 to n-1",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Arrays", "Bit Manipulation"],
+        "emojis": ["🔍", "🔄"],
+        "notes": "This problem has many solutions. The XOR approach is clever: XORing all numbers from 1 to n-1 and then XORing that result with the XOR sum of the array elements leaves you with the duplicate number. Another way is to treat the array as a linked list and find the cycle entry point, which is the duplicate!"
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 159,
+    "problems": [
+      {
+        "name": "Missing in Array",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Easy",
+        "topics": ["Arrays", "Bit Manipulation"],
+        "emojis": ["🔍", "🔢"],
+        "notes": "The sum formula (Gauss's formula) is the simplest way: the missing number is the expected sum of `1 to n` minus the actual sum of the array. The XOR approach is also elegant and avoids potential overflow issues with large numbers. It's a great example of how mathematical properties can lead to simple code."
+      }
+    ],
+    "color": "#4ade80"
+  },
+  {
+    "day": 160,
+    "problems": [
+      {
+        "name": "Unique Number II",
+        "link": "https://x.com/khurramrashidd",
+        "twitterPostLink": "https://x.com/khurramrashidd",
+        "difficulty": "Medium",
+        "topics": ["Arrays", "Bit Manipulation"],
+        "emojis": ["💡", "✌️"],
+        "notes": "A mind-bending bit manipulation problem to end the journey! The key is to first XOR all numbers, which gives `A ^ B` (where A and B are the two unique numbers). Then, find the rightmost set bit in this result. This bit is the one that differs between A and B. I used it to partition the array into two groups and XORed each group to find A and B separately. A fantastic final challenge!"
+      }
+    ],
+    "color": "#facc15"
+  }
+]
