@@ -6,8 +6,8 @@ import google.generativeai as genai
 
 app = Flask(__name__)
 
---- Gemini AI Setup ---
---- Gemini AI Setup (Secure: Load from Render Environment Variable) ---
+# --- Gemini AI Setup ---
+# --- Gemini AI Setup (Secure: Load from Render Environment Variable) ---
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
 if not GEMINI_API_KEY:
