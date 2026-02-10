@@ -14,7 +14,7 @@ if not GEMINI_API_KEY:
     raise ValueError("❌ Missing GEMINI_API_KEY environment variable in Render settings.")
 
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("gemini-2.5-flash")
+model = genai.GenerativeModel("gemini-3-flash-preview")
 
 def parse_ai_response(text):
     """
