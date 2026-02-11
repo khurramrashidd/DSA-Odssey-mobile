@@ -1,7 +1,7 @@
 ````markdown
-# 160-Day DSA Odyssey ✨    
+# 160-Day DSA Odyssey  ✨    
 
-🌐 **Live Demo**: [dsa-odssey-mobile.onrender.com](https://dsa-odssey-mobile.onrender.com/)     
+🌐 **Live Demo**: [dsa-odssey-mobile.onrender.com](https://dsa-odssey-mobile.onrender.com/)         
 
 Welcome to the **160-Day DSA Odyssey**, an interactive and visually stunning web application that chronicles a 160-day journey through the world of **Data Structures and Algorithms**.  
 
